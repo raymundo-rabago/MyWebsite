@@ -20,7 +20,7 @@
 
 
 body{
-  background-image:url('./assets/subtle_dots.png');
+  background-image:url('./assets/gridme.png');
   background-repeat:repeat;
   display:flex;
   justify-content: center;
