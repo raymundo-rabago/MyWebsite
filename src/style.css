@@ -1,0 +1,96 @@
+:root {
+  font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif; 
+  line-height: 1.5;
+  font-weight: 400;
+  font-size:14px;
+
+  color-scheme: light;
+  color: #343a40;
+  background-color: #efefef;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --primary: #d90429;
+  --accent: #212529;
+
+}
+
+
+body{
+  background-image:url('./assets/subtle_dots.png');
+  background-repeat:repeat;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  width:100dvw;
+  height:100dvh;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 82%;
+    max-width: 482px;
+    background-color: var(--accent);
+    background-image: linear-gradient(to bottom, #1d1d1d, #2f2f2f, #434343, #575757, #6c6c6c);
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px #d3d3d3;
+}
+.card > img{
+    display: block;
+    width: 144px;
+    height: 144px;
+    max-width: 144px;
+    margin: 2em auto -2em;
+    border-radius: 50%;
+    position: relative;
+}
+
+.card .card-body{
+  background:#fff;
+  padding:1.3em;
+}
+
+.card .card-body h1::after{
+    content: "";
+    display: block;
+    margin: .3em auto 0;
+    background-color: var(--primary);
+    width: 46px;
+    height: 3px;
+}
+
+.card .card-footer{
+    background: #f5f5f5;
+    border-top: 1px solid #dfdfdf;
+    color: var(--accent);
+    padding: 1.3em;
+}
+
+.card .card-footer .socialnav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card .card-footer .socialnav a{
+    display: block;
+    transition: all .3s ease-in-out;
+    opacity:.4;
+    width: 33px;
+    height: 33px;
+}
+.card .card-footer .socialnav a:hover{
+  opacity:1;
+  fill:var(--primary);
+}
+
+@media(width > 680px){
+    .card p{
+        font-size:18px;
+    }
+}
