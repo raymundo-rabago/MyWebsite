@@ -20,22 +20,23 @@
 
 
 body{
-  background-image:url('./assets/gridme.png');
+  background-image:url('./assets/subtle_dots.png');
   background-repeat:repeat;
   display:flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   align-content: center;
   text-align: center;
   width:100dvw;
   height:100dvh;
+  padding-top: 6dvh;
 }
 
 .card{
     display: flex;
     flex-direction: column;
     width: 82%;
-    max-width: 482px;
+    max-width: 420px;
     background-color: var(--accent);
     background-image: linear-gradient(to bottom, #1d1d1d, #2f2f2f, #434343, #575757, #6c6c6c);
     border-radius: 5px;
@@ -89,8 +90,18 @@ body{
   fill:var(--primary);
 }
 
-@media(width > 680px){
+@media(width > 480px){
     .card p{
         font-size:18px;
     }
+    .card .card-footer .socialnav{
+      justify-content: space-around;
+    }
+}
+
+@media(width > 768px){
+  body{
+    align-items: center;
+    padding-top:0;
+  }
 }
